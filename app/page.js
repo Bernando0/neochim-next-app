@@ -103,49 +103,25 @@ function HomePage() {
               <div className="resh-content">
                 <div className="resh-item">
                   <a href="/about">
-                    <Image
-                      src={"/imgs/1derevo.jpg'"}
-                      alt="Дерево"
-                      width={400}
-                      height={200}
-                      priority
-                    />
+                    <img src='/imgs/1derevo.jpg' alt='Дерево'></img>
                   </a>
                   <div className="resh-caption"><h3>Дерево</h3></div>
                 </div>
                 <div className="resh-item">
                   <a href="/about">
-                    <Image
-                      src={"/imgs/1beton.jpg'"}
-                      alt="Бетон"
-                      width={400}
-                      height={200}
-                      priority
-                    />
+                  <img src='/imgs/1beton.jpg' alt='Бетон'></img>
                   </a>
                   <div className="resh-caption"><h3>Бетон</h3></div>
                 </div>
                 <div className="resh-item">
                   <a href="/about">
-                    <Image
-                      src={"/imgs/1plastic.jpg'"}
-                      alt="Пластик"
-                      width={400}
-                      height={200}
-                      priority
-                    />
+                  <img src='/imgs/1plastic.jpg' alt='Пластик'></img>
                   </a>
                   <div className="resh-caption"><h3>Пластик</h3></div>
                 </div>
                 <div className="resh-item">
                   <a href="/about">
-                    <Image
-                      src={"/imgs/1krisha.jpg'"}
-                      alt="Металл"
-                      width={400}
-                      height={200}
-                      priority
-                    />
+                  <img src='/imgs/1krisha.jpg' alt='Крыша'></img>
                   </a>
                   <div className="resh-caption"><h3>Металл</h3></div>
                 </div>
