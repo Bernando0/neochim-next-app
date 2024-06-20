@@ -4,10 +4,6 @@ import Head from 'next/head';
 import Script from 'next/script';
 import SkeletonLoader from '../components/SkeletonLoader';
 import Image from 'next/image';
-import derevoImg from './../public/imgs/1derevo.jpg';
-import betonImg from './../public/imgs/1beton.jpg';
-import plasticImg from './../public/imgs/1plastic.jpg';
-import cherepImg from './../public/imgs/1krisha.jpg';
 import './home.style.scss';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -108,7 +104,7 @@ function HomePage() {
                 <div className="resh-item">
                   <a href="/about">
                     <Image
-                      src={derevoImg}
+                      src={"/imgs/1derevo.jpg'"}
                       alt="Дерево"
                       width={400}
                       height={200}
@@ -120,7 +116,7 @@ function HomePage() {
                 <div className="resh-item">
                   <a href="/about">
                     <Image
-                      src={betonImg}
+                      src={"/imgs/1beton.jpg'"}
                       alt="Бетон"
                       width={400}
                       height={200}
@@ -132,7 +128,7 @@ function HomePage() {
                 <div className="resh-item">
                   <a href="/about">
                     <Image
-                      src={plasticImg}
+                      src={"/imgs/1plastic.jpg'"}
                       alt="Пластик"
                       width={400}
                       height={200}
@@ -144,7 +140,7 @@ function HomePage() {
                 <div className="resh-item">
                   <a href="/about">
                     <Image
-                      src={cherepImg}
+                      src={"/imgs/1krisha.jpg'"}
                       alt="Металл"
                       width={400}
                       height={200}
