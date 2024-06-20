@@ -3,7 +3,7 @@ import { images, colorDescriptions, objectImages } from '../data';
 import Head from 'next/head';
 import SkeletonLoader from '../components/SkeletonLoader';
 import './home.style.scss';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const DynamicHeroSection = dynamic(() => import('../components/HeroSection'), {
   loading: () => <SkeletonLoader />,
@@ -42,8 +42,9 @@ function HomePage() {
       "contactType": "Neochim"
     }
   };
+
   return (
-    <div>
+    <>
       <Head>
         <title>Главная</title>
         <meta
@@ -55,11 +56,11 @@ function HomePage() {
           content="краска для бассейнов, резиновая краска Казахстан, краска для фасадов, жаростойкая краска, универсальная краска, купить краску для интерьера, для бетона краска, краска нескользящая"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-      <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+      </Head>
       <main>
         <div className="container">
           <header className="header">
@@ -87,25 +88,25 @@ function HomePage() {
               <div className="resh-content">
                 <div className="resh-item">
                   <a href="/about">
-                    <img src='/imgs/1derevo.jpg' alt='Дерево'></img>
+                    <img src='/imgs/1derevo.jpg' alt='Дерево' />
                   </a>
                   <div className="resh-caption"><h3>Дерево</h3></div>
                 </div>
                 <div className="resh-item">
                   <a href="/about">
-                  <img src='/imgs/1beton.jpg' alt='Бетон'></img>
+                    <img src='/imgs/1beton.jpg' alt='Бетон' />
                   </a>
                   <div className="resh-caption"><h3>Бетон</h3></div>
                 </div>
                 <div className="resh-item">
                   <a href="/about">
-                  <img src='/imgs/1plastic.jpg' alt='Пластик'></img>
+                    <img src='/imgs/1plastic.jpg' alt='Пластик' />
                   </a>
                   <div className="resh-caption"><h3>Пластик</h3></div>
                 </div>
                 <div className="resh-item">
                   <a href="/about">
-                  <img src='/imgs/1krisha.jpg' alt='Крыша'></img>
+                    <img src='/imgs/1krisha.jpg' alt='Крыша' />
                   </a>
                   <div className="resh-caption"><h3>Металл</h3></div>
                 </div>
@@ -142,7 +143,7 @@ function HomePage() {
         </div>
       </main>
       <SpeedInsights />
-    </div>
+    </>
   );
 }
 

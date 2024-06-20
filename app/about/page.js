@@ -33,7 +33,7 @@ const DynamicSliderComponent = dynamic(() => import("../../components/SliderComp
 
 function About() {
   return (
-    <div>
+    <>
     <Head>
       <title>О краске</title>
       <meta name="description" content="На этом сайте вы можете узнать плюсы и особенности резиновой краски, а так же купить Резиновая краска с доставкой по Казахстану." />
@@ -82,7 +82,7 @@ function About() {
     </div>
     </main>
     <SpeedInsights />
-  </div>
+  </>
     
   );
 }
