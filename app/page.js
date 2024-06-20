@@ -9,6 +9,7 @@ import betonImg from './../public/imgs/1beton.jpg';
 import plasticImg from './../public/imgs/1plastic.jpg';
 import cherepImg from './../public/imgs/1krisha.jpg';
 import './home.style.scss';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const DynamicHeroSection = dynamic(() => import('../components/HeroSection'), {
   loading: () => <SkeletonLoader />,
@@ -184,6 +185,7 @@ function HomePage() {
           </div>
         </div>
       </main>
+      <SpeedInsights />
     </div>
   );
 }

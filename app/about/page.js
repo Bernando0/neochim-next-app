@@ -4,6 +4,7 @@ import { images, colorDescriptions, objectImages } from "../../data";
 import "../home.style.scss";
 import SkeletonLoader from "../../components/SkeletonLoader";
 import AboutPaint from "@/components/AboutPaint";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const DynamicHeroSection = dynamic(() => import("../../components/HeroSection"), { 
   loading: () => <SkeletonLoader />, 
@@ -80,6 +81,7 @@ function About() {
       </div>
     </div>
     </main>
+    <SpeedInsights />
   </div>
     
   );

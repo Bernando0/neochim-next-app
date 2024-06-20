@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { objectImages } from "../../data";
 import "../home.style.scss";
 import SkeletonLoader from "../../components/SkeletonLoader";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const DynamicHeroSection = dynamic(() => import("../../components/HeroSection"), { 
   loading: () => <SkeletonLoader />, 
@@ -79,6 +80,7 @@ function Objects() {
       </div>
     </div>
       </main>
+      <SpeedInsights />
     </div>
   );
 }
