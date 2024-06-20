@@ -1,0 +1,26 @@
+@keyframes shimmer {
+    0% {
+      background-position: -2000px 0;
+    }
+    100% {
+      background-position: 2000px 0;
+    }
+  }
+  
+  .skeleton-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px; /* Adjust height as needed */
+  
+    .skeleton-square {
+      width: 80%; /* Adjust width as needed */
+      height: 80%; /* Adjust height as needed */
+      background: #f0f0f0;
+      background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+      background-size: 200% 100%;
+      border-radius: 8px;
+      animation: shimmer 1.5s infinite linear;
+    }
+  }
+  
