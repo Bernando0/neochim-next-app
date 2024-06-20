@@ -30,6 +30,12 @@ const DynamicSliderComponent = dynamic(() => import('../components/SliderCompone
   ssr: false,
 });
 
+export const metadata = {
+  title: "Neochim",
+  description: "На этом сайте вы можете приобрести резиновую краску по Казахстану и всему СНГ по приятной цене с быстрой доставкой.",
+  keywords: "краска для бассейнов, резиновая краска Казахстан, краска для фасадов, жаростойкая краска, универсальная краска, купить краску для интерьера, для бетона краска, краска нескользящая"
+};
+
 function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -45,22 +51,6 @@ function HomePage() {
 
   return (
     <>
-      <Head>
-        <title>Главная</title>
-        <meta
-          name="description"
-          content="На этом сайте вы можете приобрести резиновую краску по Казахстану и всему СНГ по приятной цене с быстрой доставкой."
-        />
-        <meta
-          name="keywords"
-          content="краска для бассейнов, резиновая краска Казахстан, краска для фасадов, жаростойкая краска, универсальная краска, купить краску для интерьера, для бетона краска, краска нескользящая"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </Head>
       <main>
         <div className="container">
           <header className="header">

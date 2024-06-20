@@ -31,15 +31,15 @@ const DynamicSliderComponent = dynamic(() => import("../../components/SliderComp
   ssr: false 
 });
 
+export const metadata = {
+  title: "О краске",
+  description: "На этом сайте вы можете узнать плюсы и особенности резиновой краски, а так же купить Резиновая краска с доставкой по Казахстану.",
+  keywords: "резиновая краска, преимущества резиновой краски, долговечная краска, краска для бассейна, для фасада и цоколи зданий краска, экологичная краска"
+};
+
 function About() {
   return (
     <>
-    <Head>
-      <title>О краске</title>
-      <meta name="description" content="На этом сайте вы можете узнать плюсы и особенности резиновой краски, а так же купить Резиновая краска с доставкой по Казахстану." />
-      <meta name="keywords" content="резиновая краска, преимущества резиновой краски, долговечная краска, краска для бассейна, для фасада и цоколи зданий краска, экологичная краска" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </Head>
     <main>
     <div className="container">
       <header className="header">

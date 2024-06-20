@@ -29,15 +29,15 @@ const DynamicSliderComponent = dynamic(() => import("../../components/SliderComp
   ssr: false 
 });
 
+export const metadata = {
+  title: "Заказ Neochim",
+  description: "На этом сайте вы можете заказать универсальную резиновую краску Neochim с быстрой доставкой по всему Казахстану.",
+  keywords: "резиновая краска, заказать краску, универсальная краска"
+};
+
 function Order() {
   return (
     <>
-    <Head>
-      <title>Заказ Neochim</title>
-      <meta name="description" content="На этом сайте вы можете заказать универсальную резиновую краску Neochim с быстрой доставкой по всему Казахстану." />
-      <meta name="keywords" content="резиновая краска, заказать краску, универсальная краска" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </Head>
     <main>
     <div className="container">
       <header className="header">
