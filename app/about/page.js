@@ -41,15 +41,7 @@ function About() {
   return (
     <>
     <main>
-    <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-SJMQZ9G7DP"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-SJMQZ9G7DP');
-        </script>
+      
     <div className="container">
       <header className="header">
         <div className="toolbar">

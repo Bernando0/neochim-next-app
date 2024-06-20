@@ -1,104 +1,74 @@
-import dynamic from "next/dynamic";
-import { images, colorDescriptions, objectImages } from "../data";
-import Head from "next/head";
-import SkeletonLoader from "../components/SkeletonLoader";
-import "./home.style.scss";
+import dynamic from 'next/dynamic';
+import { images, colorDescriptions, objectImages } from '../data';
+import Head from 'next/head';
+import SkeletonLoader from '../components/SkeletonLoader';
+import './home.style.scss';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const DynamicHeroSection = dynamic(() => import("../components/HeroSection"), {
+const DynamicHeroSection = dynamic(() => import('../components/HeroSection'), {
   loading: () => <SkeletonLoader />,
   ssr: false,
 });
-const DynamicNeochimBlock = dynamic(
-  () => import("../components/NeochimBlock"),
-  {
-    loading: () => <SkeletonLoader />,
-    ssr: false,
-  }
-);
-const DynamicColorsBox = dynamic(() => import("../components/ColorsBox"), {
+const DynamicNeochimBlock = dynamic(() => import('../components/NeochimBlock'), {
   loading: () => <SkeletonLoader />,
   ssr: false,
 });
-const DynamicPlusesBox = dynamic(() => import("../components/PlusesBox"), {
+const DynamicColorsBox = dynamic(() => import('../components/ColorsBox'), {
   loading: () => <SkeletonLoader />,
   ssr: false,
 });
-const DynamicContactForm = dynamic(() => import("../components/ContactForm"), {
+const DynamicPlusesBox = dynamic(() => import('../components/PlusesBox'), {
   loading: () => <SkeletonLoader />,
   ssr: false,
 });
-const DynamicSliderComponent = dynamic(
-  () => import("../components/SliderComponent"),
-  {
-    loading: () => <SkeletonLoader />,
-    ssr: false,
-  }
-);
+const DynamicContactForm = dynamic(() => import('../components/ContactForm'), {
+  loading: () => <SkeletonLoader />,
+  ssr: false,
+});
+const DynamicSliderComponent = dynamic(() => import('../components/SliderComponent'), {
+  loading: () => <SkeletonLoader />,
+  ssr: false,
+});
 
 export const metadata = {
   title: "Neochim",
-  description:
-    "На этом сайте вы можете приобрести резиновую краску по Казахстану и всему СНГ по приятной цене с быстрой доставкой.",
-  keywords:
-    "краска для бассейнов, резиновая краска Казахстан, краска для фасадов, жаростойкая краска, универсальная краска, купить краску для интерьера, для бетона краска, краска нескользящая",
+  description: "На этом сайте вы можете приобрести резиновую краску по Казахстану и всему СНГ по приятной цене с быстрой доставкой.",
+  keywords: "краска для бассейнов, резиновая краска Казахстан, краска для фасадов, жаростойкая краска, универсальная краска, купить краску для интерьера, для бетона краска, краска нескользящая"
 };
 
 function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "NEOCHIM",
-    url: "https://www.neochim-colors.kz",
-    contactPoint: {
+    "name": "NEOCHIM",
+    "url": "https://www.neochim-colors.kz",
+    "contactPoint": {
       "@type": "ContactPoint",
-      telephone: "+7 (778) 884 0306",
-      contactType: "Neochim",
-    },
+      "telephone": "+7 (778) 884 0306",
+      "contactType": "Neochim"
+    }
   };
 
   return (
     <>
       <main>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-SJMQZ9G7DP"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-SJMQZ9G7DP');
-        </script>
+        
         <div className="container">
           <header className="header">
             <div className="toolbar">
               <h1 className="logo">NEOCHIM</h1>
               <nav className="nav-links">
-                <a href="/about" className="nav-link">
-                  О краске
-                </a>
-                <a href="/objects" className="nav-link">
-                  Объекты
-                </a>
-                <a href="/order" className="nav-link highlight">
-                  Заказать
-                </a>
+                <a href="/about" className="nav-link">О краске</a>
+                <a href="/objects" className="nav-link">Объекты</a>
+                <a href="/order" className="nav-link highlight">Заказать</a>
                 <span className="phone">
-                  <a
-                    href="https://api.whatsapp.com/send?phone=77788840306"
-                    className="phone"
-                  >
-                    +7 (778) 884 0306
-                  </a>
+                  <a href="https://api.whatsapp.com/send?phone=77788840306" className="phone">+7 (778) 884 0306</a>
                 </span>
               </nav>
             </div>
           </header>
           <div className="bottom-stripe1"></div>
-          <DynamicHeroSection
-            images={images}
-            colorDescriptions={colorDescriptions}
-          />
+          <DynamicHeroSection images={images} colorDescriptions={colorDescriptions} />
           <DynamicColorsBox colorDescriptions={colorDescriptions} />
           <DynamicPlusesBox />
           <div className="bottom-stripe"></div>
@@ -109,35 +79,27 @@ function HomePage() {
               <div className="resh-content">
                 <div className="resh-item">
                   <a href="/about">
-                    <img src="/imgs/1derevo.jpg" alt="Дерево" />
+                    <img src='/imgs/1derevo.jpg' alt='Дерево' />
                   </a>
-                  <div className="resh-caption">
-                    <h3>Дерево</h3>
-                  </div>
+                  <div className="resh-caption"><h3>Дерево</h3></div>
                 </div>
                 <div className="resh-item">
                   <a href="/about">
-                    <img src="/imgs/1beton.jpg" alt="Бетон" />
+                    <img src='/imgs/1beton.jpg' alt='Бетон' />
                   </a>
-                  <div className="resh-caption">
-                    <h3>Бетон</h3>
-                  </div>
+                  <div className="resh-caption"><h3>Бетон</h3></div>
                 </div>
                 <div className="resh-item">
                   <a href="/about">
-                    <img src="/imgs/1plastic.jpg" alt="Пластик" />
+                    <img src='/imgs/1plastic.jpg' alt='Пластик' />
                   </a>
-                  <div className="resh-caption">
-                    <h3>Пластик</h3>
-                  </div>
+                  <div className="resh-caption"><h3>Пластик</h3></div>
                 </div>
                 <div className="resh-item">
                   <a href="/about">
-                    <img src="/imgs/1krisha.jpg" alt="Крыша" />
+                    <img src='/imgs/1krisha.jpg' alt='Крыша' />
                   </a>
-                  <div className="resh-caption">
-                    <h3>Металл</h3>
-                  </div>
+                  <div className="resh-caption"><h3>Металл</h3></div>
                 </div>
               </div>
             </div>
