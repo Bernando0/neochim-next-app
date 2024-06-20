@@ -1,9 +1,7 @@
 import dynamic from 'next/dynamic';
 import { images, colorDescriptions, objectImages } from '../data';
 import Head from 'next/head';
-import Script from 'next/script';
 import SkeletonLoader from '../components/SkeletonLoader';
-import Image from 'next/image';
 import './home.style.scss';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -37,17 +35,12 @@ function HomePage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "NEOCHIM",
-    "url": "https://your-domain.com",
-    "logo": "https://your-domain.com/logo.png",
+    "url": "https://www.neochim-colors.kz",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+7 (778) 884 0306",
-      "contactType": "Customer Service"
-    },
-    "sameAs": [
-      "https://www.facebook.com/your-profile",
-      "https://www.instagram.com/your-profile"
-    ]
+      "contactType": "Neochim"
+    }
   };
   return (
     <div>
@@ -63,15 +56,6 @@ function HomePage() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      {/* <Script src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID" strategy="afterInteractive" />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'GA_TRACKING_ID');
-        `}
-      </Script> */}
       <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
