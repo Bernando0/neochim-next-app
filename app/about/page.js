@@ -70,9 +70,10 @@ function About() {
           </div>
           <div className="footer-section">
             <h3>Разделы</h3>
-            <p>Объекты</p>
-            <p>О краске</p>
-            <p>Заказать</p>
+             
+            <p><a href='/objects'>Объекты</a></p>
+                <p><a href='/about'>О краске</a></p>
+                <p><a href='/order'>Заказать</a></p>
           </div>
         </div>
         <div className="footer-bottom">

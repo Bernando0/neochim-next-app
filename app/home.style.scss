@@ -193,7 +193,7 @@
   
   .hero-image {
     width: 100%;
-    height: 120vh;
+    height: 90vh;
     object-fit: cover;
     object-position: center;
     transition: transform 0.3s ease;
@@ -988,6 +988,11 @@
           color: #39545F;
           margin: 5px 0;
         }
+        a{
+          text-decoration: none;
+          color: #39545F;
+          cursor: pointer;
+        }
       }
     }
   
@@ -1217,7 +1222,7 @@
       padding-top: 0;
   
       .hero-image {
-        height: 100vh;
+        height: 90vh;
       }
   
       .indicator-container {
