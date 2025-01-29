@@ -1,6 +1,4 @@
 import dynamic from "next/dynamic";
-import Head from 'next/head';
-import { objectImages } from "../../data";
 import "../home.style.scss";
 import SkeletonLoader from "../../components/SkeletonLoader";
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -31,9 +29,9 @@ const DynamicSliderComponent = dynamic(() => import("../../components/SliderComp
 });
 
 export const metadata = {
-  title: "Обьекты Neochim",
-  description: "На этом сайте вы можете увидеть обьекты уже покрашенные резиновой краской Neochim, а так же можете заказать резиновую краску с доставкой по СНГ.",
-  keywords: "резиновая краска, обьекты покрашенные краской, заказать краску"
+    title: 'Объекты Neochim Colors - примеры работ с резиновой краской',
+    description: 'Галерея объектов, окрашенных резиновой краской Neochim. Примеры применения для фасадов, бассейнов, внутренней отделки.',
+    keywords: 'резиновая краска примеры, окрашенные объекты, краска для бассейна примеры, краска для фасада фото, резиновая краска применение',
 };
 
 function Objects() {
@@ -76,7 +74,7 @@ function Objects() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>NEOCHIM 2024</p>
+          <p>NEOCHIM 2025</p>
         </div>
       </div>
     </div>

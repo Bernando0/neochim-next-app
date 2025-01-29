@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://neochim-next-app-xna5.vercel.app/
+Host: https://neochim-colors.kz/
 
 # Sitemaps
-Sitemap: https://neochim-next-app-xna5.vercel.app/sitemap.xml
+Sitemap: https://neochim-colors.kz/sitemap.xml

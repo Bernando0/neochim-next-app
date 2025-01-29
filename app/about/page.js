@@ -1,6 +1,4 @@
 import dynamic from "next/dynamic";
-import Head from 'next/head';
-import { images, colorDescriptions, objectImages } from "../../data";
 import "../home.style.scss";
 import SkeletonLoader from "../../components/SkeletonLoader";
 import AboutPaint from "@/components/AboutPaint";
@@ -32,9 +30,9 @@ const DynamicSliderComponent = dynamic(() => import("../../components/SliderComp
 });
 
 export const metadata = {
-  title: "О краске",
-  description: "На этом сайте вы можете узнать плюсы и особенности резиновой краски, а так же купить Резиновая краска с доставкой по Казахстану.",
-  keywords: "резиновая краска, преимущества резиновой краски, долговечная краска, краска для бассейна, для фасада и цоколи зданий краска, экологичная краска"
+  title: 'О резиновой краске Neochim - характеристики и преимущества',
+  description: 'Подробная информация о резиновой краске Neochim: технические характеристики, преимущества, области применения. Экологичная краска для внутренних и внешних работ.',
+  keywords: 'резиновая краска характеристики, краска для бассейна, долговечная краска, водоэмульсионная краска, краска для фасада, краска для стен, универсальная краска',
 };
 
 function About() {
@@ -77,7 +75,7 @@ function About() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>NEOCHIM 2024</p>
+          <p>NEOCHIM 2025</p>
         </div>
       </div>
     </div>

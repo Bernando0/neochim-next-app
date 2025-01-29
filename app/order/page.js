@@ -1,8 +1,6 @@
 import dynamic from "next/dynamic";
-import { objectImages } from "../../data";
 import "../home.style.scss";
 import SkeletonLoader from "../../components/SkeletonLoader";
-import Head from "next/head";
 
 const DynamicHeroSection = dynamic(
   () => import("../../components/HeroSection"),
@@ -39,10 +37,9 @@ const DynamicSliderComponent = dynamic(
 );
 
 export const metadata = {
-  title: "Заказ Neochim",
-  description:
-    "На этом сайте вы можете заказать универсальную резиновую краску Neochim с быстрой доставкой по всему Казахстану.",
-  keywords: "резиновая краска, заказать краску, универсальная краска",
+  title: 'Заказать резиновую краску Neochim с доставкой',
+  description: 'Купить резиновую краску Neochim с доставкой по Казахстану. Официальный дистрибьютор.',
+  keywords: 'купить резиновую краску, заказать краску, резиновая краска цена, краска для бассейна купить, водоэмульсионная краска купить',
 };
 
 function Order() {
@@ -104,7 +101,7 @@ function Order() {
               </div>
             </div>
             <div className="footer-bottom">
-              <p>NEOCHIM 2024</p>
+              <p>NEOCHIM 2025</p>
             </div>
           </div>
         </div>

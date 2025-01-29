@@ -1,6 +1,5 @@
 import dynamic from 'next/dynamic';
 import { images, colorDescriptions, objectImages } from '../data';
-import Head from 'next/head';
 import SkeletonLoader from '../components/SkeletonLoader';
 import './home.style.scss';
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -31,21 +30,39 @@ const DynamicSliderComponent = dynamic(() => import('../components/SliderCompone
 });
 
 export const metadata = {
-  title: "Neochim",
-  description: "На этом сайте вы можете приобрести резиновую краску по Казахстану и всему СНГ по приятной цене с быстрой доставкой.",
-  keywords: "краска для бассейнов, резиновая краска Казахстан, краска для фасадов, жаростойкая краска, универсальная краска, купить краску для интерьера, для бетона краска, краска нескользящая"
+  title: 'Neochim Colors - Резиновая краска для любых поверхностей',
+  description: 'Универсальная резиновая краска Neochim для внутренних и внешних работ, бассейнов и фасадов. Официальный дистрибьютор в Казахстане. Бесплатная доставка от 10 литров.',
+  keywords: 'резиновая краска, краска резиновая, краска для стен, краски, водоэмульсионная краска, жаростойкая краска, краска для бассейна, универсальная краска, краска для фасада, краска нескользящая',
 };
 
 function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "NEOCHIM",
-    "url": "https://www.neochim-colors.kz",
+    "name": "Neochim Colors",
+    "description": "Официальный дистрибьютор резиновой краски Neochim в Казахстане",
+    "url": "https://neochim-colors.kz",
+    "logo": "https://neochim-colors.kz/favicon.ico",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+7 (778) 884 0306",
-      "contactType": "Neochim"
+      "contactType": "sales",
+      "availableLanguage": ["Russian", "Kazakh"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Ангарская 105а",
+      "addressLocality": "Алматы",
+      "addressCountry": "KZ"
+    },
+    "offers": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Резиновая краска Neochim",
+        "description": "Универсальная резиновая краска для внутренних и внешних работ, бассейнов",
+        "category": "Строительные материалы > Краски"
+      }
     }
   };
 
@@ -128,7 +145,7 @@ function HomePage() {
               </div>
             </div>
             <div className="footer-bottom">
-              <p>NEOCHIM 2024</p>
+              <p>NEOCHIM 2025</p>
             </div>
           </div>
         </div>
