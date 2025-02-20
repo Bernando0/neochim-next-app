@@ -70,6 +70,7 @@ function HomePage() {
     <>
       <main>
         
+        
         <div className="container">
           <header className="header">
             <div className="toolbar">
